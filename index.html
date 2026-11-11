@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8e8e9" />
+  <title>Twenty-One • A Little Love Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Go to beginning"><span class="brand-flower">✿</span> twenty-one</a>
+    <nav aria-label="Main navigation">
+      <a href="#letter">The letter</a><a href="#memories">Memories</a><a href="#tulips">Tulips</a>
+    </nav>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle ambient music">♪ <span>Music</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo"></div><div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">A little celebration of you</p>
+        <h1>Twenty-one<br><em>looks lovely</em><br>on you.</h1>
+        <p class="hero-sub">A small corner of the internet, made with love, for your special day.</p>
+        <button class="primary-button" id="openInvitation" type="button">Open your birthday surprise <span>↗</span></button>
+        <p class="scroll-note">SCROLL A LITTLE <span>↓</span></p>
+      </div>
+      <div class="hero-caption">A day to celebrate you · 21</div>
+    </section>
+
+    <section class="intro section-wrap" id="surprise">
+      <div class="section-kicker">01 — THE SURPRISE</div>
+      <div class="intro-copy">
+        <p class="script">For my favorite person</p>
+        <h2>Some words are<br><em>better opened.</em></h2>
+        <p class="muted">There is a letter waiting just for you. Take a breath, tap the envelope, and let the birthday magic begin.</p>
+      </div>
+      <button class="envelope-button" id="envelope" type="button" aria-label="Open the birthday letter">
+        <span class="envelope-stamp">21</span>
+        <span class="envelope-flap"></span><span class="envelope-body"></span>
+        <span class="letter-peek">A letter for you</span>
+        <span class="envelope-heart">♡</span>
+      </button>
+      <p class="tap-hint">TAP THE ENVELOPE TO OPEN</p>
+    </section>
+
+    <section class="letter-section section-wrap" id="letter">
+      <div class="section-kicker">02 — A LETTER FROM ME</div>
+      <div class="letter-paper">
+        <div class="paper-top"><span>With all my love</span><span>♡ 21 ♡</span></div>
+        <p class="script">My dearest,</p>
+        <h2>To the girl who makes<br>ordinary days <em>golden.</em></h2>
+        <div class="letter-text" id="letterDisplay">
+          <p>Happy 21st birthday, mahal. Today is all about celebrating you — the woman you are, and even more, the woman God continues to shape you into.</p>
+          <p>If there's one thing I hope you never question, it's this.</p>
+          <p><strong>You are doing so much better than you give yourself credit for.</strong>I witness how faitful you carry your responsibilities, how deeply yu love your family, and how strong you face all the struggles world sent andI witness it all. Through your quiet sacrifices and your willingness to kerpp showing up especially on the hard days. <strong>You have become ablessing not only to me, but to everyone who know you.</strong></p>
+          <p>I hope this new chapter brings you the kind of happiness that stays, dreams that come true, and countless reasons to smile. Thank you for being part of my favorite memories. I am so lucky to make more of them with you.</p>
+          <p>May you always feel loved, appreciated, and celebrated. Here's to twenty-one and to all the beautiful moments still waiting for you.</p>
+          <p><strong>WE LOVE YOU SO MUCH MAHAL!!!</strong></p>
+        </div>
+        <p class="signature">Forever cheering for you, Your number one supporter<span>♡</span></p>
+        <div class="letter-edit">
+          <label for="letterInput">Make this letter yours — edit the message</label>
+          <textarea id="letterInput" rows="5" placeholder="Write your own birthday letter here..."></textarea>
+          <button class="text-button" id="saveLetter" type="button">Update the letter ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="greeting section-wrap">
+      <div class="greeting-image-wrap"><img src="assets/birthday-greeting.png" alt="A favorite memory in the mountains at golden hour" /></div>
+      <div class="greeting-copy">
+        <div class="section-kicker">03 — YOUR DAY, YOUR LIGHT</div>
+        <p class="script">Happy birthday, beautiful</p>
+        <h2>May this year be<br><em>as lovely as you.</em></h2>
+        <p class="muted">Twenty-one chapters in, and your story is only getting more beautiful. Keep being curious, brave, soft-hearted, and completely yourself.</p>
+        <div class="tiny-flower">✿ <span>ILOVEYOU ALWAYS</span> ✿</div>
+      </div>
+    </section>
+
+    <section class="memories section-wrap" id="memories">
+      <div class="section-kicker">04 — LITTLE MOMENTS, BIG LOVE</div>
+      <div class="section-heading">
+        <div><p class="script">Our keepsakes</p><h2>Memories worth<br><em>keeping close.</em></h2></div>
+        <p class="muted">Add your favorite snapshots here. This gallery is yours to fill with the moments that feel like home.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <figure class="memory-card memory-main"><img src="assets/couple-background.png" alt="A sunset selfie together with a fluffy white dog"><figcaption><span>01</span> A golden-hour kind of memory</figcaption></figure>
+        <figure class="memory-card memory-second"><img src="assets/birthday-greeting.png" alt="A mountain view and a special birthday memory"><figcaption><span>02</span> A view worth remembering</figcaption></figure>
+      </div>
+      <div class="upload-panel">
+        <div><strong>Add more memories</strong><p class="muted">Choose photos from your device. They appear here while this page is open.</p></div>
+        <label class="upload-button" for="photoUpload">＋ Add photos</label>
+        <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+      </div>
+    </section>
+
+    <section class="tulips-section" id="tulips">
+      <div class="tulip-art">
+        <img src="assets/tulip-bouquet.png" alt="A playful bouquet of tulips with a collection of smiling photo cutouts" />
+      </div>
+      <div class="tulip-copy">
+        <div class="section-kicker">05 — HER FAVORITE FLOWER</div>
+        <p class="script">A flower just for you</p>
+        <h2>For the girl<br>who loves <em>tulips.</em></h2>
+        <p>Like tulips in spring, may you keep blooming in every season. A little reminder that you deserve gentle days, bright colors, and all the love in the world.</p>
+        <p class="tulip-note">One tulip for every new beginning. 🌷</p>
+      </div>
+    </section>
+
+    <section class="closing section-wrap">
+      <p class="script">One last thing...</p>
+      <h2>The world is brighter<br><em>with you in it.</em></h2>
+      <p class="muted">Happy 21st birthday. I hope you felt even a little of how special you are.</p>
+      <div class="closing-flower">✿</div>
+      <p class="closing-sign">Made with love, just for you ♡</p>
+      <a href="#home" class="back-top">BACK TO THE BEGINNING ↑</a>
+    </section>
+  </main>
+
+  <footer><span>TWENTY-ONE</span><span>A LITTLE LOVE STORY · MADE FOR YOU</span><span>♡</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
